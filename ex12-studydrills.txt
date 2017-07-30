@@ -1,0 +1,39 @@
+pydoc 查看帮助文档。
+
+raw_input(...)
+    raw_input([prompt]) -> string
+
+    Read a string from standard input.  The trailing newline is stripped.
+    If the user hits EOF (Unix: Ctl-D, Windows: Ctl-Z+Return), raise EOFError.
+    On Unix, GNU readline is used if enabled.  The prompt string, if given,
+    is printed without a trailing newline before reading.
+
+open(...)
+    open(name[, mode[, buffering]]) -> file object
+
+    Open a file using the file() type, returns a file object.  This is the
+    preferred way to open a file.  See file.__doc__ for further information.q
+
+class file(object)
+ |  file(name[, mode[, buffering]]) -> file object
+ |
+ |  Open a file.  The mode can be 'r', 'w' or 'a' for reading (default),
+ |  writing or appending.  The file will be created if it doesn't exist
+ |  when opened for writing or appending; it will be truncated when
+ |  opened for writing.  Add a 'b' to the mode for binary files.
+ |  Add a '+' to the mode to allow simultaneous reading and writing.
+ |  If the buffering argument is given, 0 means unbuffered, 1 means line
+ |  buffered, and larger numbers specify the buffer size.  The preferred way
+ |  to open a file is with the builtin open() function.
+ |  Add a 'U' to mode to open the file for input with universal newline
+ |  support.  Any line ending in the input file will be seen as a '\n'
+ |  in Python.  Also, a file so opened gains the attribute 'newlines';
+ |  the value for this attribute is one of None (no newline read yet),
+ |  '\r', '\n', '\r\n' or a tuple containing all the newline types seen.
+
+sys
+
+DESCRIPTION
+    This module provides access to some objects used or maintained by the
+    interpreter and to functions that interact strongly with the interpreter.
+

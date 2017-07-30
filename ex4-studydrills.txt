@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "ex4.py", line 8, in <module>
+    average_passengers_per_car = car_pool_capacity / passenger
+NameError: name 'car_pool_capacity' is not defined
+
+第一行表示：系统开始追踪(最近一次调用的程序)
+第二行表示：搜寻到文件"ex4.py"，第八行出错。
+第三行显示：代码第八行内容
+第四行表示：出错原因是'car_pool_capacity'这个名字没有被定义过。
+所以要查询是否缺失定义，或拼写错误。
+
+浮点数4.0的使用此例中没必要。space_in_a_car表示汽车容量（能坐多少人）。整数会遇到在整数位四舍五入，造成结果不精确，此例没有这个问题。
+
